@@ -1,0 +1,46 @@
+.background
+{
+	background-image:url("avi.jpg");
+	background-size:cover;
+    background-attachment:fixed;
+	background-position:center;
+	background-repeat:no-repeat;
+     min-width:100%;
+	min-height:665px;
+	display: block;
+}
+.tx{
+	margin-top:6px;
+	border-left:0px;
+    border-right:0px;
+    border-top:0px;
+	border-bottom:3px solid #9999ff;
+	background-color:rgba(70, 61, 61, 0.62);
+	margin-buttom:5px;
+	color:white;
+	
+}
+.tx:hover{
+ border-left:0px;
+ border-right:0px;
+ border-top:0px;
+ border-bottom:3px solid red;
+ border-radius:2px 2px 2px 2px;
+ }.srchtitle
+{
+	text-align:center;
+	margin-bottom:10px;
+	font-family:Trebuchet MS;
+	letter-spacing:2px;
+	font-size:20px;
+	color:white;
+	
+}
+.modalbg
+{
+	background-color: rgba(20, 218, 161, 0.35);
+}
+.modal-content {
+	background-color: rgba(20, 218, 161, 0.35);
+}
+	

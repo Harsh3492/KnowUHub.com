@@ -1,0 +1,49 @@
+#bg{
+width:1350px;
+height:630px;
+background-image:url("m.jpg"); 
+repeat:no-repeat;
+border:1px solid;
+background-size:cover;
+ padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+#cent{
+font-size:35px white;
+width:350px;
+height:200px;
+
+margin-top:270px;
+margin-left:530px;
+}
+p{
+font-size:35px ;
+font-family: Arial;
+color:#dee509;
+}
+#log{
+height:100px;
+width:auto;
+
+margin:10px;
+padding:10px;
+float:left;
+}
+#log a
+{
+text-decoration:none;
+color:white;
+display:block;
+float:left;
+margin:10px;
+padding:10px;
+border-radius:5px;
+}
+#log a:hover
+{
+color:red;
+background-color:yellow;
+
+}

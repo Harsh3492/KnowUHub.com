@@ -1,0 +1,24 @@
+.background
+{
+	background-image:url("view.jpg");
+	background-size:cover;
+    background-attachment:fixed;
+	background-position:center;
+	background-repeat:no-repeat;
+     min-width:100%;
+	min-height:665px;
+	display: block;
+}
+.tx{
+	border-left:0px;
+    border-right:0px;
+    border-top:0px;
+	border-bottom:3px solid #9999ff;
+}
+.tx:hover{
+ border-left:0px;
+ border-right:0px;
+ border-top:0px;
+ border-bottom:3px solid red;
+ border-radius:2px 2px 2px 2px;
+ }

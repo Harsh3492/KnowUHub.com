@@ -1,0 +1,111 @@
+body{
+  font-family: 'Cabin', sans-serif;
+  background-color: #282C34;
+  background: url(bgp.jpeg) no-repeat center center fixed;
+  background-size: cover;
+}
+.title{
+  margin-top: 10px;
+  font-size: 32px;
+  color: #eb4d4b;
+}
+@media (max-width:676px) {
+  .title{
+    margin-top: 5px;
+    font-size: 20px;
+  }
+}
+.img{
+  height: 73px;
+}
+@media (max-width:676px) {
+  .img{
+    height:50px;
+  }
+}
+.name{
+  color: black;
+  font-weight: 200;
+
+}
+.point{
+  text-align: left;
+}
+.markPoint{
+  margin-top:38px;
+  color: #e74c3c;
+  margin-left: 25px;
+  font-size: 32px;
+}
+@media (max-width:676px) {
+  .markPoint{
+    margin-top:18px;
+    margin-left: auto;
+    font-size: 16px;
+  }
+}
+.input{
+   width: 110px;
+}
+@media (max-width:676px) {
+  .input{
+     width: 60px;
+  }
+}
+.ansMark{
+  margin-left: 10px;
+  margin-top: 7px;
+  margin-right: 10px;
+  color:#e74c3c;
+}
+
+@media (max-width: 575px){
+  .ansMark{
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 13px;
+
+  }
+}
+@media (min-width: 576px) and (max-width: 768.95px){
+  .ansMark{
+    margin-left: 9px;
+    margin-right: 9px;
+    font-size: 15px;
+
+  }
+}
+.submitbtn{
+font-size: 20px;
+}
+@media (max-width:676px) {
+  .submitbtn{
+  font-size: 13px;
+  }
+}
+input::-webkit-input-placeholder {
+    font-size: 15px;
+    line-height: 3;
+}
+@media (max-width:676px){
+  input::-webkit-input-placeholder {
+      font-size: 12px;
+      line-height: 3;
+  }
+}
+.rowHeight{
+   height:500px;
+}
+
+@media(min-height:800px){
+	.rowHeight{
+   height:1200px;}
+}
+.qtxt{
+  font-size:30px;
+}
+@media (max-width:576px) {
+    .qtxt{
+       font-size:20px;
+}
+}

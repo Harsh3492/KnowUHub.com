@@ -1,0 +1,214 @@
+
+.bg{
+	background-image:url("w1.jpg");
+	background-size:cover;
+    background-attachment:fixed;
+	background-position:center;
+	background-repeat:no-repeat;
+	height:100%;
+	min-height:665px;
+	display: block;
+    width: 100%;
+
+}
+
+.text-center
+{
+    position:absolute;   
+    text-align: center ;
+	top:45%;
+	width:100%;
+	font-size:40px;
+	letter-spacing:8px;
+	font-family:Trebuchet MS;
+	color:#eee;
+	
+}
+@media(max-width:600px)
+{
+	.text-center{font-size:25px ! important;}
+}
+.top
+{
+margin-top:10px;	
+}
+.my{
+	background-color:#81b046;
+	color:white;
+	margin-left:10px;
+	font-size:10px;
+	
+}
+.my:hover{
+	background-color:white;
+	
+}
+@media(min-width:700px)
+{
+	.my { padding: 10px 16px ! important;
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 6px; 
+  margin-left:25px;
+  }
+
+  }
+#bg{
+height:440px;
+width:550px;
+margin:50px;
+margin-left:400px;
+border:1px solid;
+}
+.tx{
+	margin-top:6px;
+	border-left:0px;
+    border-right:0px;
+    border-top:0px;
+	border-bottom:3px solid #9999ff;
+	background-color:rgba(0, 0, 0, 0.13);
+	margin-buttom:5px;
+	color:white;
+	
+}
+.tx:hover{
+ border-left:0px;
+ border-right:0px;
+ border-top:0px;
+ border-bottom:3px solid red;
+ border-radius:2px 2px 2px 2px;
+ }
+#un{
+margin:50px;
+margin-top:px;
+padding:50px;}
+ 
+ 
+ #nm{
+ margin-top:150px;
+font-family:Arial Rounded MT;
+ color:#40bf40;
+ }
+ #sm{
+ height:35px;
+ width:200px;
+text-align:center;
+ margin-left:100px;
+ margin-top:20px;
+ padding:10px;
+
+ padding-bottom:35px;
+ 
+border:none;
+border-radius: 10px; 
+ font-size:20px;
+ background-color:green;}
+#bc{height:35px;
+width:150px;
+margin-top:15px;
+border:none;
+margin-top:10px;
+margin-bottom:15px;
+} 
+#m{
+font-size:20px;
+color:black;
+margin-top:10px;
+} 
+#x{
+height:auto;
+width:80px;
+float:left;
+font-size:30px;
+margin:10px;
+padding:10px;
+border-radius:5px;
+margin-left:460px;
+border:none;
+background:none;
+}
+#x:hover{
+background-color:green;
+
+color:red;}
+#new{
+font-family:Arial Rounded MT;
+color:red;
+font-size:20px;
+text-decoration:none;
+margin-top:10px;
+padding-top:10px;	
+}
+.help{
+	margin-right:10px;
+}
+@media(min-width:700px)
+{
+	.help { padding: 10px 16px ! important;
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 6px; 
+ margin-right:100px;
+ background-color:rgba(206, 85, 102, 0.55);
+  }
+
+.l{
+	margin-left:0px;
+	color:rgba(255, 0, 0, 0.04);
+	font-size:15px;
+background-color: rgba(255, 0, 0, 0.04);
+opacity:1;
+	text-decoration:none;
+}
+@media(max-width:800px)
+{
+	.l{font-size:13px !important;}
+}
+.l:hover{
+	color:white;
+}
+
+
+.r{
+	margin-right:20px;
+	opacity:1;
+	color:rgba(255, 0, 0, 0.04);
+	font-size:15px;
+}
+@media(max-width:800px)
+{
+	.r{font-size:13px !important;}
+}
+.r:hover{
+	color:white;
+}
+.textloggin{
+	text-align:center;
+	color:white;
+}
+
+.modalbg
+{
+	background-color:rgba(0, 0, 0, 0.13);
+}
+.myAvy{
+	background-color:#81b046;
+	color:white;
+	margin-left:10px;
+	
+}
+.myAvy:hover{
+	background-color:white;
+	
+}
+@media(min-width:700px)
+{
+	.myAvy { padding: 10px 16px ! important;
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 6px; 
+  margin-left:25px;
+  }
+
+  }
+  

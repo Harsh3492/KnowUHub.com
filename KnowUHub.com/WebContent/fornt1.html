@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>KnowUHub</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="EditFornt1/css/fornt1.css" />
+  <link rel="shortcut icon" href="favicon.ico" />
+
+  
+</head>
+<body>
+	<div class="jumbotron bg">
+     <div class="container-fulid top">
+	 <div class="row">
+	 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
+	 
+	 <button type="button" data-toggle="modal" data-target="#pop1" class="btn  btn-sm my" style="font-family: 'Montserrat', sans-serif;">LogIn</button>
+	 
+	 
+	 <div id="pop1" class="modal fade ">
+      <div class="modal-dialog  modal-lg modal-md modal-sm modal-xs" >
+        <div class="modal-content" style="background-color:rgba(0, 0, 0, 0.13);">
+		
+		<div class="modal-header">
+		<p class="textloggin" style="text-align:center;color:white;">LogIn <button type="button" class="close" data-dismiss="modal"><p style="color:white;">&times;</p></button></p>
+		
+		 </div>
+		
+		 <div class="modal-body">
+             <div class="container"> 
+              <div class="row">   
+               <div  class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                 <form  action="./login" method="post" name="fname" onsubmit="return valid()">  <!----Start of login----->
+                      <div class="form-group">
+					    <lable for="tx1" id="nm" style="font-family: 'Montserrat', sans-serif;"><b>Roll Number</b></lable></br>
+						<input id="tx1" style="font-family: 'Montserrat', sans-serif;" type="text" class="form-control tx" name="t1" placeholder="e.g. 000000001" />
+					      </div>
+					        <div class="form-group">
+							 <lable for="tx2" id="nm" style="font-family: 'Montserrat', sans-serif;"><b>Enter Password</b></lable></br>
+                              <input id="tx2" style="font-family: 'Montserrat', sans-serif;" class="form-control tx" type="password" name="t2" placeholder="Password" />
+						 </div>
+                         <div class="form-group">
+						 <input id="sm1" style="font-family: 'Montserrat', sans-serif;" type="submit" class="form-control btn-info" value="Log in" placeholder="Submit" />
+                      </div>						 
+				  </form>	
+    		  </div>
+    		  </div>			 
+		  </div><!-- ------end of modal container-------- -->
+		 </div>
+		 <div class="modal-footer" style="background-color:black;">
+		   <div class="container">
+		     <div class="row">
+			 <div class="form-group">
+		     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" >
+			  
+			  <a id="ne" style="font-family: 'Montserrat', sans-serif;text-decoration:none;" class="pull-left l close" data-toggle="modal" data-target="#pop2" data-dismiss="modal"><p style="color:white;font-size:15px;">New User?</p></a>
+             </div>
+             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+			   <a id="ne" style="font-family: 'Montserrat', sans-serif;" class="pull-right r close" data-toggle="modal" data-target="#pop3" data-dismiss="modal" href="#"><p style="color:white; font-size:15px;">Forget Password</p></a>		 
+		   </div>
+		     </div>
+	  
+	  </div>
+	  </div>
+	</div>
+		</div>
+	</div>
+    </div>
+    <!-- ----------------------------Start of Forget Password------------------------------------- -->
+	 <div id="pop3" class="modal fade">
+	   <div class="modal-dialog">
+	    <div class="modal-content" style="background-color:rgba(0, 0, 0, 0.13);">
+	      <div class="modal-header">
+	      <p class="textloggin" style="text-align:center;color:white;">Forget Password<button type="button" class="close" data-dismiss="modal">&times;</button> </p>
+		 </div>
+	      
+	      <div class="modal-body">
+            <form method ="post" action="./forgetpwd" name="fsignup" onsubmit="return validsignup()">
+             <div class="form-group">		    
+			   <lable for="tx3" id="nm" style="font-family: 'Montserrat', sans-serif;"><b>Enter Roll Number</b></lable></br>
+                <input id="tx3" type="text" style="font-family: 'Montserrat', sans-serif;"  name="rollno" class="form-control tx"  placeholder="e.g. 000000001" /><br>
+			      </div>
+				 <div class="form-group">
+						 <input id="sm1" style="font-family: 'Montserrat', sans-serif;" type="submit" class="form-control btn-info" value="Send" placeholder="Submit" />
+                      </div>
+				 
+				   </form></div>
+			     
+		     <div class="modal-footer">
+			  
+			  </div>
+		</div>
+	   </div>
+	 </div>
+	<!-- ----------------------------End of Forget Password------------------------------------- -->
+	<!-- ----------------------------Start of Help------------------------------------- -->
+	 <button type="button" data-toggle="modal" data-target="#pop4"class="btn btn-sm  my pull-right help" style="font-family: 'Montserrat', sans-serif;">Help</button>
+	 <div id="pop4" class="modal fade">
+	   <div class="modal-dialog">
+	    <div class="modal-content " style="background-color:rgba(0, 0, 0, 0.13);">
+		 <div class="modal-header"><p class="textloggin" style="text-align:center;color:white;">Problem/Feedback<button type="button" class="close" data-dismiss="modal">&times;</button> </p>
+		 </div>
+		   <div class="modal-body">
+            <form method="post" action="./feedback" name="fHelp" onsubmit="return help()">
+             <div class="form-group">		    
+			   <lable for="tx3" id="nm" style="font-family: 'Montserrat', sans-serif;"><b>Enter Roll Number</b></lable></br>
+                <input  id="tx3" type="text" style="font-family: 'Montserrat', sans-serif;" name="rollno" class="form-control tx"  placeholder="e.g. 000000001" /><br>
+			      </div>
+			      <div>
+			       <lable for="tx3" id="nm"style="font-family: 'Montserrat', sans-serif;"><b>Enter Email Id</b></lable></br>
+                <input  id="tx3" type="text" style="font-family: 'Montserrat', sans-serif;" name="email" class="form-control tx"  placeholder="Enter Your Valid Email Id" /><br>
+			      </div>
+			      <div class="form-group">		    
+			   <lable for="tx3" style="font-family: 'Montserrat', sans-serif;" id="nm"><b>Problem/Feedback</b></lable></br>
+                <textarea id="tx3" style="font-family: 'Montserrat', sans-serif;" name="feedback" class="form-control tx" style="height:100px;"  placeholder="Write Your Query" ></textarea><br>
+			      </div>
+				 <div class="form-group">
+						 <input id="sm1" style="font-family: 'Montserrat', sans-serif;" type="submit" class="form-control btn-info" value="Send" placeholder="Submit" />
+                      </div>
+				 
+				   </form></div>
+			     
+		     <div class="modal-footer">
+			  
+			  </div>
+		</div>
+	   </div>
+	 </div>
+	<!-- ----------------------------End of Help------------------------------------- -->
+		  <!-- -----------------------------Button of Calculator-------- -->
+	 <a href="./theCalculater" class="btn btn-sm pull-right my" style="font-family: 'Montserrat', sans-serif;">the Calculator</a>
+	  <!-- -----------------------------End Button of Calculator-------- -->
+	<!-- ----------------------------START of list------------------------------------- -->
+<!--<button type="button" data-toggle="modal" data-target="#listpop" class="btn btn-sm  my pull-right"style="font-family: 'Montserrat', sans-serif;">L.E. List</button>
+	<div id="listpop" class="modal fade">
+	  <div class="modal-dialog ">
+	    <div class="modal-content">
+	     <div class="modal-header">
+	     <p class="textloggin" style="text-align:center;color:black;">Lateral Entry list <button type="button" class="close" data-dismiss="modal">&times;</button> </p>
+	     </div>
+	      <div class="modal-body">
+	      <div class="table-responsive">
+	        <table class="table">
+	           <caption style="text-align:center;font-size:20px;color:red;">Electronics & communication Engineering List</caption>
+	             <tr>
+	             <th >NAME</th><th>ROLL Number<th>
+	             </tr>
+	             <tr>
+	             <td>Abhishek</td><td>1718731901</td>
+	             </tr>
+	             <tr>
+	             <td>Akhlak</td><td>1718731902</td>
+	             </tr>
+	             <tr>
+	             <td>BAmrita</td><td>1718731903</td>
+	             </tr>
+	             <tr>
+	             <td>Antima</td><td>1718731904</td>
+	             </tr>
+	             <tr>
+	             <td>Bhaguean</td><td>1718731905</td>
+	             </tr>
+	             <tr>
+	             <td>Fateh</td><td>1718731906</td>
+	             </tr>
+	             <tr>
+	             <td>Hamza</td><td>1718731907</td>
+	             </tr>
+	             <tr>
+	             <td>Janhvi</td><td>1718731908</td>
+	             </tr>
+	             <tr>
+	             <td>Kajal</td><td>1718731909</td>
+	             </tr>
+	             <tr>
+	             <td>Komal</td><td>1718731910</td>
+	             </tr>
+	             <tr>
+	             <td>Mohd</td><td>1718731911</td>
+	             </tr>
+	             <tr>
+	             <td>Monita</td><td>1718731912</td>
+	             </tr>
+	             <tr>
+	             <td>Shubhlendra</td><td>1718731913</td>
+	             </tr>
+	             <tr>
+	             <td>Sunita</td><td>1718731914</td>
+	             </tr>
+	             <tr>
+	             <td>Surya</td><td>1718731915</td>
+	             </tr>
+	             </table>
+	             <div class="table-responsive">
+	             <table class="table">
+	             <caption style="text-align:center;font-size:20px;color:red;">Computer Science Engineering List</caption>
+	             <tr>
+	             <th >NAME</th><th>ROLL Number<th>
+	             </tr>
+	             <tr>
+	             <td>ABHISHEK SHUKLA</td><td>1718710901</td>
+	             </tr>
+	             <tr>
+	             <td>AKANSHA PATHAK</td><td>1718710902</td>
+	             </tr>
+	             <tr>
+	             <td>BHUPENDRA SINGH</td><td>1718710903</td>
+	             </tr>
+	             <tr>
+	             <td>DINESH CHAUHAN</td><td>1718710904</td>
+	             </tr>
+	             <tr>
+	             <td>GAUTAM BHARTI</td><td>1718710905</td>
+	             </tr>
+	             <tr>
+	             <td>MAMTA PAL</td><td>1718710906</td>
+	             </tr>
+	             <tr>
+	             <td>OM SINGH</td><td>1718710907</td>
+	             </tr>
+	             <tr>
+	             <td>PAWAN KUMAR</td><td>1718710908</td>
+	             </tr>
+	             <tr>
+	             <td>POOJA DIXIT</td><td>1718710909</td>
+	             </tr>
+	             <tr>
+	             <td>PRAGYA DIXIT</td><td>1718710910</td>
+	             </tr>
+	             <tr>
+	             <td>RAHUL KANNOUJIA</td><td>1718710911</td>
+	             </tr>
+	             <tr>
+	             <td>RAVIKANT SINGH</td><td>1718710912</td>
+	             </tr>
+	             <tr>
+	             <td>SALMA</td><td>1718710913</td>
+	             </tr>
+	             <tr>
+	             <td>SHAKTI SINGH</td><td>1718710914</td>
+	             </tr>
+	             <tr>
+	             <td>SHUBHAM CHAURASIYA</td><td>1718710915</td>
+	             </tr>
+	             <tr>
+	              <td>SURYA PRATAP SINGH</td><td>1718710916</td>
+	             </tr>
+	             <tr>
+	             <td>VASVI VASHISHTA</td><td>1718710917</td>
+	             </tr>
+	             <tr>
+	             <td>VENKTESH TRIPATHI</td><td>1718710918</td>
+	             </tr>
+	             </table></div>
+	             <div class="table-responsive">
+	             <table class="table">
+	             <caption style="text-align:center;font-size:20px;color:red;">Mechanical Engineering List</caption>
+	                <tr><td>Sorry No Data Found .....Waiting for Data.......</td></tr>
+	             </table></div>
+	             <div class="table-responsive">
+	             <table class="table">
+	             <caption style="text-align:center;font-size:20px;color:red;">Aeronautical Engineering List</caption>
+	                <tr><td>Sorry No Data Found .....Waiting for Data.......</td></tr>
+	             </table>
+	             </div><!-- ----End of responsive table------ -->
+	       <!-- -   </div>
+	    </div>
+	  </div>
+	</div></div>--- -->
+	<!-- ----------------------------end of list------------------------------------- -->
+	
+	 <button type="button" data-toggle="modal" data-target="#pop2"class="btn btn-sm my" style="font-family: 'Montserrat', sans-serif;">SignUp</button>
+	 <div id="pop2" class="modal fade">
+	   <div class="modal-dialog">
+	    <div class="modal-content" style="background-color:rgba(0, 0, 0, 0.13);">
+		 <div class="modal-header"><p class="textloggin" style="text-align:center;color:white;">SignUp <button type="button" class="close" data-dismiss="modal">&times;</button> </p>
+		 </div>
+		   <div class="modal-body">
+            <form action="./otpsend" name="search" onsubmit="return searchvalid();">
+             <div class="form-group">		    
+			   <lable for="tx3" id="nm" style="font-family: 'Montserrat', sans-serif;"><b>Enter Roll Number</b></lable></br>
+                <input id="text" type="text"  name="rollno"  class="form-control tx" style="font-family: 'Montserrat', sans-serif;" placeholder="e.g. 000000001" /><br>
+			      </div>
+				 <div class="form-group">
+						 <input id="sm1" type="submit" class="form-control btn-info" style="font-family: 'Montserrat', sans-serif;" value="Send OTP" placeholder="Submit" />
+                      </div>
+				 
+				   </form></div>
+			     
+		     <div class="modal-footer">
+			  
+			  </div>
+		</div>
+	   </div>
+	 </div>
+	 <!-- -----------------------------------End Of SignUp----------------------------------------------- -->
+	  
+
+	 </div>	
+	 </div>
+	  </div><!-- ---------end of container ------- -->	 
+
+	   
+      <div class="container-fluid">
+       <div class="row">
+       <div class="col-sm-12 ">
+       <button style="font-family: 'Montserrat', sans-serif;background-color:#a94442;position:fixed;top:80px;left:32%;" data-toggle="modal" data-target="#popHowto" class="btn btnResult btn-sm my">How to?</button>
+       <a href="img/Result.png" style="font-family: 'Montserrat', sans-serif;background-color:#2B9393;position:fixed;top:130px;left:30%;" class="btn btnResult btn-sm my" download>Avy Match Result</a>
+       </div>
+        
+       </div>
+     </div>
+    
+     
+     <!-- ---------------how to section-------- -->
+      <div id="popHowto" class="modal fade">
+	   <div class="modal-dialog">
+	    <div class="modal-content" style="background-color:#343A40;">
+		 <div class="modal-header"><p class="textloggin" style="font-family: 'Montserrat', sans-serif;text-align:center;color:white;">Anonymous Message<button type="button" class="close" data-dismiss="modal">&times;</button> </p>
+		 </div>
+		   <div class="modal-body">
+		      <p style="font-family: 'Montserrat', sans-serif;color:white; font-size:15px;"> 1: You Need to register yourself first.if done then</p>
+			  
+			  <p style="font-family: 'Montserrat', sans-serif;color:white; font-size:15px;"> 2: Login with your id and password</p>
+		   
+              <p style="font-family: 'Montserrat', sans-serif;color:white; font-size:15px;"> 3: press the search button and enter Roll number (AKTU roll no.) whom you want to send the anonymous message.</p>
+
+			  <p style="font-family: 'Montserrat', sans-serif;color:#E72C30;font-size:15px;"> [Note: Anonymous chat is only for FGIETians.  ]</p>
+			  
+              <p style="font-family: 'Montserrat', sans-serif;color:white;font-size:15px;"> 4: press on message button to read your messages,you can reply that person by pressing  the reply button.</p>
+
+             <p style="font-family: 'Montserrat', sans-serif;color:#E72C30; font-size:15px;" >[Note: for the anonymous chat, you must have to send the message from search  ]</p>
+            </div>
+			     
+		  
+		</div>
+	   </div>
+	 </div>
+     <!-- ---------------end how to section-------- -->
+	 <div class="container-fluid">
+       <div class="row">
+       <div class="col-sm-12 ">
+       
+       
+       </div>
+        
+       </div>
+     </div>
+	 <h2 class="text-center" style="font-family: 'Montserrat', sans-serif;"> Welcome FGiETian</h2>
+	 
+	 </div>
+	 
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="EditFornt1/js/login.js"></script>
+    <script type="text/javascript">
+    
+    swal("Anonymous Chat", "To Know about Anonymous Chat Click on How To? Button");
+    
+function searchvalid()
+{
+    var rollno=document.getElementById("text").value;
+	if(rollno==="" || rollno==="e.g. 000000001") 
+	{
+		alert("Please Enter Rollno");
+		return false;
+	}
+    
+	
+	if(isNaN(rollno))
+	{
+		alert("Please Enter Valid Roll Number");
+		return false;
+	}
+	
+	/*if( rollno.length <= 11 )
+	{
+		alert("Please enter valid Roll Number");
+		return false;
+	}*/
+}
+ function help()
+ {
+   var rollno=document.forms["fHelp"]["rollno"].value;
+   if(rollno=="")
+	   {
+	   alert("Please Enter Roll Number");
+	   return false;
+	   }
+ 
+   if((rollno).length!=10)
+	   {
+	   alert("Please Enter Valid Roll Number");
+	   return false;
+	   }
+   
+   if(isNaN(rollno))
+	   {
+	   alert("Please Enter Valid Roll Number");
+	   return false;
+	   }
+   var email=document.forms["fHelp"]["email"].value;
+   if(email=="")
+	   {
+	   alert("Please Enter Valid Email Id");
+	   return false;
+	   }
+   var feedback=document.forms["fHelp"]["feedback"].value;
+   if(feedback=="")
+	   {
+	   alert("Please Enter Feedback/Problem");
+	   return false;
+	   }
+ }
+
+
+</script>
+</body>
+</html>
